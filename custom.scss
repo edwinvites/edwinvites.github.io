@@ -1,0 +1,57 @@
+@import "./node_modules/bootstrap-5.2.1-dist/scss/functions";
+
+
+
+
+$enable-rounded: false;
+
+@import "./node_modules/bootstrap-5.2.1-dist/scss/variables";
+
+
+@import "./node_modules/bootstrap-5.2.1-dist/scss/variables-dark";
+
+
+
+
+
+
+@import "./node_modules/bootstrap-5.2.1-dist/scss/maps";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/mixins";
+
+
+
+
+@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities";
+
+
+
+@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities/api";
+
+$utilities: (
+    "background-color": (property: background-color,
+        class: bg,
+        local-vars: ("bg-opacity": 1),
+        values: map-merge($utilities-bg-colors,
+            ("black": #000)))
+);
+
+
+@import "./node_modules/bootstrap-5.2.1-dist/scss/nav";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/navbar";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/grid";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/images";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/modal";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/close";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/containers";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/offcanvas";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/reboot";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/root";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/tables";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/type";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/button-group";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/buttons";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/carousel";
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
