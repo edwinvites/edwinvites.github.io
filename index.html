@@ -19,9 +19,9 @@
 
 </head>
 
-<body>
+<body class="vh-100 bg-dark">
 
-  <header>
+  <header class="">
 
     <div class="navbar navbar-dark bg-black shadow-sm">
       <div class="container">
@@ -39,9 +39,62 @@
     </div>
   </header>
 
-  <main class="bg-dark ps-5 pe-5 ">
+  <main class="bg-dark ps-1 pe-1 ps-sm-5 pe-sm-5  h-75">
 
-    <div class="container-fluid pt-5 ps-5 ">
+    <div id="carouselExampleControls"  class="carousel slide h-100"  >
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex justify-content-center" onclick="vinculo('universo')">
+              <img style="cursor: pointer;" src="./assets/img/explore.png"
+                class="w-100 w-sm-50 rounded-2" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex justify-content-center   " onclick="vinculo('consejos')">
+              <img style="cursor: pointer;" src="./assets/img/generador_de_consejos.png"
+                class="w-100 w-sm-50 rounded-2" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex justify-content-center " onclick="vinculo('caja')">
+              <img style="cursor: pointer;" src="./assets/img/caja_comentarios_editada.png"
+                class="w-100 w-sm-50 rounded-2" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex justify-content-center" onclick="vinculo('secuencia')">
+              <img style="cursor: pointer;" src="./assets/img/repite_los_pasos_editada.png"
+                class="w-100 w-sm-50 rounded-2" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex justify-content-center  " onclick="vinculo('tarjeta')">
+              <img style="cursor: pointer;" src="./assets/img/simulacion_tarjeta_producto.JPG"
+                class="w-100 w-sm-50 rounded-2" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="visually-hidden d-none d-sm-block">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden d-none d-sm-block">Next</span>
+      </button>
+    </div>
+
+    <!-- <div class="container-fluid pt-5 ps-5 ">
       <div class="row bg-dark">
         <div class="col-6 ">
           <div class="d-flex justify-content-center align-items-center h-100">
@@ -111,7 +164,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- <div class="album py-5 ">
 

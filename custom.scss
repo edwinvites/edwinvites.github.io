@@ -21,19 +21,40 @@ $enable-rounded: false;
 
 
 
-@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities";
 
-
-
-@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities/api";
 
 $utilities: (
-    "background-color": (property: background-color,
-        class: bg,
-        local-vars: ("bg-opacity": 1),
-        values: map-merge($utilities-bg-colors,
-            ("black": #000)))
+  "background-color": (property: background-color,
+    class: bg,
+    local-vars: ("bg-opacity": 1),
+    values: map-merge($utilities-bg-colors,
+      ("black": #000))),
+  "height": (property: height,
+    class: h,
+    responsive: true,
+    values: (25: 25%,
+      50: 50%,
+      55: 55%,
+      75: 75%,
+      100: 100%,
+      auto: auto)),
+  "width": (property: width,
+    class: w,
+    responsive: true,
+    values: (25: 25%,
+      50: 50%,
+      55: 55%,
+      75: 75%,
+      100: 100%,
+      200: 200%,
+      250: 250%,
+      300: 300%,
+      auto: auto))
 );
+
+@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities";
+@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities/api";
+
 
 
 @import "./node_modules/bootstrap-5.2.1-dist/scss/nav";
@@ -55,3 +76,31 @@ $utilities: (
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+*::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+*::-webkit-scrollbar-track {
+
+  background-color: var(--bs-dark);
+}
