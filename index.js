@@ -5,19 +5,19 @@ function vinculo(pagina) {
 
     switch (pagina) {
         case "caja":
-            a.href="https://jhovannyvivas.github.io/caja_de_comentarios_simulada/";
+            a.href="https://edwinvites.github.io/caja_de_comentarios_simulada/";
             
             break;
         case "consejos":
-            a.href="https://jhovannyvivas.github.io/advice-generator-app/";
+            a.href="https://edwinvites.github.io/advice-generator-app/";
             
             break;
         case "secuencia":
-            a.href="https://jhovannyvivas.github.io/repite-los-pasos/";
+            a.href="https://edwinvites.github.io/repite-los-pasos/";
             
             break;
         case "tarjeta":
-            a.href="https://jhovannyvivas.github.io/product-preview-card-component/";
+            a.href="https://edwinvites.github.io/product-preview-card-component/";
             
             break;
         case "universo":
