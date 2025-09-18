@@ -1,22 +1,22 @@
-@import "./node_modules/bootstrap-5.2.1-dist/scss/functions";
+@import "./node_modules/bootstrap/scss/functions";
 
 
 
 
 $enable-rounded: false;
 
-@import "./node_modules/bootstrap-5.2.1-dist/scss/variables";
+@import "./node_modules/bootstrap/scss/variables";
 
 
-@import "./node_modules/bootstrap-5.2.1-dist/scss/variables-dark";
-
-
-
+@import "./node_modules/bootstrap/scss/variables-dark";
 
 
 
-@import "./node_modules/bootstrap-5.2.1-dist/scss/maps";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/mixins";
+
+
+
+@import "./node_modules/bootstrap/scss/maps";
+@import "./node_modules/bootstrap/scss/mixins";
 
 
 
@@ -28,7 +28,8 @@ $utilities: (
     class: bg,
     local-vars: ("bg-opacity": 1),
     values: map-merge($utilities-bg-colors,
-      ("black": #000))),
+      ("black": #000,
+      "dorado":   #ffc600))),
   "height": (property: height,
     class: h,
     responsive: true,
@@ -52,26 +53,26 @@ $utilities: (
       auto: auto))
 );
 
-@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/utilities/api";
+@import "./node_modules/bootstrap/scss/utilities";
+@import "./node_modules/bootstrap/scss/utilities/api";
 
 
 
-@import "./node_modules/bootstrap-5.2.1-dist/scss/nav";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/navbar";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/grid";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/images";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/modal";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/close";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/containers";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/offcanvas";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/reboot";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/root";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/tables";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/type";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/button-group";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/buttons";
-@import "./node_modules/bootstrap-5.2.1-dist/scss/carousel";
+@import "./node_modules/bootstrap/scss/nav";
+@import "./node_modules/bootstrap/scss/navbar";
+@import "./node_modules/bootstrap/scss/grid";
+@import "./node_modules/bootstrap/scss/images";
+@import "./node_modules/bootstrap/scss/modal";
+@import "./node_modules/bootstrap/scss/close";
+@import "./node_modules/bootstrap/scss/containers";
+@import "./node_modules/bootstrap/scss/offcanvas";
+@import "./node_modules/bootstrap/scss/reboot";
+@import "./node_modules/bootstrap/scss/root";
+@import "./node_modules/bootstrap/scss/tables";
+@import "./node_modules/bootstrap/scss/type";
+@import "./node_modules/bootstrap/scss/button-group";
+@import "./node_modules/bootstrap/scss/buttons";
+@import "./node_modules/bootstrap/scss/carousel";
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
@@ -82,7 +83,7 @@ $utilities: (
 }
 
 *::-webkit-scrollbar:vertical {
-  width: 10px;
+  width: 0;
 }
 
 *::-webkit-scrollbar-button:increment,
@@ -103,4 +104,11 @@ body::-webkit-scrollbar-button {
 *::-webkit-scrollbar-track {
 
   background-color: var(--bs-dark);
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, minmax(auto,200px));
+  gap: 12px;
 }

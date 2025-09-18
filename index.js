@@ -5,7 +5,7 @@ function vinculo(pagina) {
 
     switch (pagina) {
         case "caja":
-            a.href="https://edwinvites.github.io/caja_de_comentarios_simulada/";
+            a.href="";
             
             break;
         case "consejos":
@@ -21,7 +21,7 @@ function vinculo(pagina) {
             
             break;
         case "universo":
-            a.href="https://universo-3jx2.vercel.app/";
+            a.href="https://travels4000.vercel.app/";
             
             break;
     
